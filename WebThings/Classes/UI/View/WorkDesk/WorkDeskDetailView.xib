@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSansFallback.ttf">
+            <string>DroidSansFallback</string>
+        </array>
+        <array key="DroidSans_Bold.ttf">
+            <string>DroidSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkDeskDetailView">
+            <connections>
+                <outlet property="contentLab" destination="ydh-cZ-eVG" id="7oC-OQ-XAz"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="VxX-n9-R0Y"/>
+                <outlet property="timeLab" destination="dyz-HH-nCR" id="dIn-FX-n1M"/>
+                <outlet property="titleLab" destination="wie-GC-T60" id="f8f-EM-VLM"/>
+                <outlet property="xwFatherV" destination="Rwt-hZ-T5s" id="Vpk-60-fMG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wie-GC-T60">
+                    <rect key="frame" x="13" y="13" width="4" height="15.5"/>
+                    <fontDescription key="fontDescription" name="DroidSans-Bold" family="Droid Sans" pointSize="13"/>
+                    <color key="textColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rwt-hZ-T5s">
+                    <rect key="frame" x="307" y="0.0" width="68" height="86"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_3_selected" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-Ve-B7q">
+                            <rect key="frame" x="14" y="13" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="BK3-iB-wBO"/>
+                                <constraint firstAttribute="height" constant="40" id="bwz-Sr-0n9"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IVE(小维)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcj-e5-mrq">
+                            <rect key="frame" x="9" y="60" width="51" height="14"/>
+                            <fontDescription key="fontDescription" name="DroidSans-Bold" family="Droid Sans" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iEl-Ve-B7q" firstAttribute="centerX" secondItem="Rwt-hZ-T5s" secondAttribute="centerX" id="0rI-IN-Zx3"/>
+                        <constraint firstAttribute="bottom" secondItem="Gcj-e5-mrq" secondAttribute="bottom" constant="12" id="E8i-ie-47V"/>
+                        <constraint firstItem="Gcj-e5-mrq" firstAttribute="centerX" secondItem="Rwt-hZ-T5s" secondAttribute="centerX" id="iFN-GF-agk"/>
+                        <constraint firstItem="iEl-Ve-B7q" firstAttribute="top" secondItem="Rwt-hZ-T5s" secondAttribute="top" constant="13" id="iXc-9o-YKo"/>
+                        <constraint firstAttribute="width" constant="68" id="ixK-lI-dyJ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydh-cZ-eVG">
+                    <rect key="frame" x="13" y="37.5" width="349" height="16"/>
+                    <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="12"/>
+                    <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_date" translatesAutoresizingMaskIntoConstraints="NO" id="zzC-q1-80i">
+                    <rect key="frame" x="13" y="63.5" width="13" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="13" id="Ejs-f4-zVD"/>
+                        <constraint firstAttribute="height" constant="13" id="YKv-X9-rqI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyz-HH-nCR">
+                    <rect key="frame" x="29" y="62.5" width="3" height="13.5"/>
+                    <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="10"/>
+                    <color key="textColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hV6-9h-1q9">
+                    <rect key="frame" x="13" y="84" width="349" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="7qq-Bs-6xQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zzC-q1-80i" firstAttribute="top" secondItem="ydh-cZ-eVG" secondAttribute="bottom" constant="10" id="2jp-tc-BVW"/>
+                <constraint firstAttribute="trailing" secondItem="Rwt-hZ-T5s" secondAttribute="trailing" id="4v2-e3-i1o"/>
+                <constraint firstItem="dyz-HH-nCR" firstAttribute="top" secondItem="ydh-cZ-eVG" secondAttribute="bottom" constant="9" id="7zg-WF-2ds"/>
+                <constraint firstItem="wie-GC-T60" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="L84-di-lch"/>
+                <constraint firstItem="ydh-cZ-eVG" firstAttribute="top" secondItem="wie-GC-T60" secondAttribute="bottom" constant="9" id="MtK-qv-5UG"/>
+                <constraint firstItem="hV6-9h-1q9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="N6U-2m-mLG"/>
+                <constraint firstItem="ydh-cZ-eVG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="S9M-un-gcb"/>
+                <constraint firstAttribute="trailing" secondItem="hV6-9h-1q9" secondAttribute="trailing" constant="13" id="Tft-WK-Ooi"/>
+                <constraint firstItem="dyz-HH-nCR" firstAttribute="leading" secondItem="zzC-q1-80i" secondAttribute="trailing" constant="3" id="eRJ-fz-tjL"/>
+                <constraint firstAttribute="bottom" secondItem="hV6-9h-1q9" secondAttribute="bottom" constant="1" id="g4M-ZW-Pvf"/>
+                <constraint firstAttribute="trailing" secondItem="ydh-cZ-eVG" secondAttribute="trailing" constant="13" id="lg9-QI-Eqd"/>
+                <constraint firstItem="Rwt-hZ-T5s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nJT-lv-ib6"/>
+                <constraint firstAttribute="bottom" secondItem="Rwt-hZ-T5s" secondAttribute="bottom" id="p2n-Zf-Zlk"/>
+                <constraint firstItem="wie-GC-T60" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="tDb-cR-gyy"/>
+                <constraint firstItem="zzC-q1-80i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="vMd-od-zgV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_date" width="12" height="12"/>
+        <image name="tab_3_selected" width="41" height="41"/>
+    </resources>
+</document>

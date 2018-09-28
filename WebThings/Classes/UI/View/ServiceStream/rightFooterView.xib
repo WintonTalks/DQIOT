@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSansFallback.ttf">
+            <string>DroidSansFallback</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="rightFooterView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ibu-Vf-2k6"/>
+                <outlet property="headImgV" destination="rPI-6v-dp2" id="yuq-iH-pmf"/>
+                <outlet property="nameLab" destination="Ffr-Fv-0JO" id="chh-mJ-zW4"/>
+                <outlet property="positionLab" destination="c8r-3V-GYi" id="bkM-bU-h1k"/>
+                <outlet property="timeLab" destination="Ef6-1w-sVu" id="Huv-l5-d4u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rPI-6v-dp2" customClass="HeadImgV">
+                    <rect key="frame" x="213" y="10" width="21" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="V5r-Ee-Rxx"/>
+                        <constraint firstAttribute="width" constant="21" id="js3-P0-p8d"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="10.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksTouBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="10.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原沿哉" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffr-Fv-0JO">
+                    <rect key="frame" x="176" y="10" width="27" height="10.5"/>
+                    <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="9"/>
+                    <color key="textColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车间主任" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8r-3V-GYi">
+                    <rect key="frame" x="171" y="21.5" width="32" height="9.5"/>
+                    <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="8"/>
+                    <color key="textColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_date" translatesAutoresizingMaskIntoConstraints="NO" id="WJd-LV-SSK">
+                    <rect key="frame" x="11" y="12" width="9" height="9"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="9" id="Po1-t4-RZ9"/>
+                        <constraint firstAttribute="height" constant="9" id="UNa-Gz-h0p"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/06/27 12:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef6-1w-sVu">
+                    <rect key="frame" x="22" y="13" width="47.5" height="7"/>
+                    <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="6"/>
+                    <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rPI-6v-dp2" firstAttribute="leading" secondItem="Ffr-Fv-0JO" secondAttribute="trailing" constant="10" id="09M-w2-gvF"/>
+                <constraint firstItem="c8r-3V-GYi" firstAttribute="bottom" secondItem="rPI-6v-dp2" secondAttribute="bottom" id="6VC-GF-3xG"/>
+                <constraint firstItem="Ef6-1w-sVu" firstAttribute="centerY" secondItem="WJd-LV-SSK" secondAttribute="centerY" id="9y3-tm-X6N"/>
+                <constraint firstItem="c8r-3V-GYi" firstAttribute="trailing" secondItem="Ffr-Fv-0JO" secondAttribute="trailing" id="D6U-4i-anW"/>
+                <constraint firstAttribute="trailing" secondItem="rPI-6v-dp2" secondAttribute="trailing" constant="11" id="DcY-KD-4Dw"/>
+                <constraint firstItem="WJd-LV-SSK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="TZS-dh-HId"/>
+                <constraint firstItem="rPI-6v-dp2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="WC6-hv-iNr"/>
+                <constraint firstItem="Ffr-Fv-0JO" firstAttribute="top" secondItem="rPI-6v-dp2" secondAttribute="top" id="ZEE-Hn-26J"/>
+                <constraint firstItem="WJd-LV-SSK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="qph-Q6-hql"/>
+                <constraint firstItem="Ef6-1w-sVu" firstAttribute="leading" secondItem="WJd-LV-SSK" secondAttribute="trailing" constant="2" id="xd3-rM-gJB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_date" width="12" height="12"/>
+    </resources>
+</document>

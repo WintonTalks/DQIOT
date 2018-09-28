@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSans_Bold.ttf">
+            <string>DroidSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StopListCell" rowHeight="311" id="bhn-7H-OGQ" customClass="StopListCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="311"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bhn-7H-OGQ" id="NSV-bb-3DL">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="310.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdu-bt-WAb">
+                        <rect key="frame" x="36" y="0.0" width="1" height="310.5"/>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.4941176471" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="EvJ-VX-pDu"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAB-tb-UZK" customClass="EMICardView">
+                        <rect key="frame" x="51" y="1" width="245" height="294.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63h-fl-Pqt">
+                                <rect key="frame" x="0.0" y="0.0" width="245" height="49"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service_center_title_bj" translatesAutoresizingMaskIntoConstraints="NO" id="UzN-Qn-p0s">
+                                        <rect key="frame" x="-4" y="-2" width="253" height="53"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="停租单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHv-SH-kzW">
+                                        <rect key="frame" x="10" y="16" width="45" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="DroidSans-Bold" family="Droid Sans" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="FP9-cN-bjD"/>
+                                    <constraint firstItem="UzN-Qn-p0s" firstAttribute="leading" secondItem="63h-fl-Pqt" secondAttribute="leading" constant="-4" id="Rk6-zh-kEP"/>
+                                    <constraint firstAttribute="bottom" secondItem="UzN-Qn-p0s" secondAttribute="bottom" constant="-2" id="Zgy-fO-aVM"/>
+                                    <constraint firstAttribute="trailing" secondItem="UzN-Qn-p0s" secondAttribute="trailing" constant="-4" id="agA-6A-RC1"/>
+                                    <constraint firstItem="DHv-SH-kzW" firstAttribute="leading" secondItem="63h-fl-Pqt" secondAttribute="leading" constant="10" id="f7b-Ng-y8g"/>
+                                    <constraint firstItem="UzN-Qn-p0s" firstAttribute="top" secondItem="63h-fl-Pqt" secondAttribute="top" constant="-2" id="fPB-yC-xOG"/>
+                                    <constraint firstItem="DHv-SH-kzW" firstAttribute="centerY" secondItem="63h-fl-Pqt" secondAttribute="centerY" id="wPL-N1-knk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icJ-lx-OEw">
+                                <rect key="frame" x="10" y="64" width="52" height="15.5"/>
+                                <fontDescription key="fontDescription" name="DroidSans-Bold" family="Droid Sans" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.4431372549" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7O7-Kj-ngP">
+                                <rect key="frame" x="0.0" y="94.5" width="245" height="160"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMS-Su-BXc" customClass="ServiceDetailView">
+                                        <rect key="frame" x="0.0" y="0.0" width="245" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6B-T7-P2V" customClass="ServiceDetailView">
+                                        <rect key="frame" x="0.0" y="32" width="245" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAs-2r-O03" customClass="ServiceDetailView">
+                                        <rect key="frame" x="0.0" y="64" width="245" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Vo-qP-7gJ" customClass="ServiceDetailView">
+                                        <rect key="frame" x="0.0" y="96" width="245" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIz-tR-tNV" customClass="ServiceDetailView">
+                                        <rect key="frame" x="0.0" y="128" width="245" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="4Rz-7c-YzY"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icv-3R-fwu">
+                                <rect key="frame" x="0.0" y="254.5" width="245" height="40.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="icv-3R-fwu" secondAttribute="bottom" id="1LP-HU-cIE"/>
+                            <constraint firstItem="icv-3R-fwu" firstAttribute="top" secondItem="7O7-Kj-ngP" secondAttribute="bottom" id="1Tb-bq-2O5"/>
+                            <constraint firstItem="icJ-lx-OEw" firstAttribute="leading" secondItem="aAB-tb-UZK" secondAttribute="leading" constant="10" id="49N-ek-INw"/>
+                            <constraint firstItem="7O7-Kj-ngP" firstAttribute="leading" secondItem="aAB-tb-UZK" secondAttribute="leading" id="4pG-eO-7O3"/>
+                            <constraint firstAttribute="trailing" secondItem="7O7-Kj-ngP" secondAttribute="trailing" id="5Bx-rL-NMz"/>
+                            <constraint firstAttribute="trailing" secondItem="63h-fl-Pqt" secondAttribute="trailing" id="EaZ-XT-dBU"/>
+                            <constraint firstItem="63h-fl-Pqt" firstAttribute="top" secondItem="aAB-tb-UZK" secondAttribute="top" id="Hyg-Q2-9kd"/>
+                            <constraint firstItem="63h-fl-Pqt" firstAttribute="leading" secondItem="aAB-tb-UZK" secondAttribute="leading" id="P6b-zU-Y4t"/>
+                            <constraint firstItem="icJ-lx-OEw" firstAttribute="top" secondItem="63h-fl-Pqt" secondAttribute="bottom" constant="15" id="WEO-6j-aaj"/>
+                            <constraint firstAttribute="width" constant="245" id="Zt0-AM-1SN"/>
+                            <constraint firstAttribute="trailing" secondItem="icv-3R-fwu" secondAttribute="trailing" id="cTp-lG-VXr"/>
+                            <constraint firstItem="7O7-Kj-ngP" firstAttribute="top" secondItem="icJ-lx-OEw" secondAttribute="bottom" constant="15" id="jgP-Eo-MD2"/>
+                            <constraint firstItem="icv-3R-fwu" firstAttribute="leading" secondItem="aAB-tb-UZK" secondAttribute="leading" id="otn-eQ-Z1s"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6E0-Sv-N54">
+                        <rect key="frame" x="8" y="295.5" width="359" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Hsk-YK-eNP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zdu-bt-WAb" firstAttribute="leading" secondItem="NSV-bb-3DL" secondAttribute="leading" constant="36" id="0Vh-4f-Rqs"/>
+                    <constraint firstItem="zdu-bt-WAb" firstAttribute="top" secondItem="NSV-bb-3DL" secondAttribute="top" id="0xs-7a-KsT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6E0-Sv-N54" secondAttribute="trailing" id="2ZR-cb-sdl"/>
+                    <constraint firstAttribute="bottom" secondItem="6E0-Sv-N54" secondAttribute="bottom" id="6HQ-QI-IcH"/>
+                    <constraint firstItem="aAB-tb-UZK" firstAttribute="bottom" secondItem="6E0-Sv-N54" secondAttribute="top" id="HG2-zs-FOK"/>
+                    <constraint firstAttribute="bottom" secondItem="zdu-bt-WAb" secondAttribute="bottom" id="JVC-OC-e4J"/>
+                    <constraint firstItem="aAB-tb-UZK" firstAttribute="leading" secondItem="NSV-bb-3DL" secondAttribute="leading" constant="51" id="KgS-qI-4Hl"/>
+                    <constraint firstItem="aAB-tb-UZK" firstAttribute="top" secondItem="NSV-bb-3DL" secondAttribute="top" constant="1" id="abz-bf-AFI"/>
+                    <constraint firstItem="6E0-Sv-N54" firstAttribute="leading" secondItem="NSV-bb-3DL" secondAttribute="leadingMargin" id="lq7-Gf-fhu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomFatherV" destination="icv-3R-fwu" id="fW8-dp-8En"/>
+                <outlet property="fatherV" destination="aAB-tb-UZK" id="jo5-GB-Qnf"/>
+                <outlet property="fatherVLeading" destination="KgS-qI-4Hl" id="bwG-ff-wmq"/>
+                <outlet property="fatherVWidth" destination="Zt0-AM-1SN" id="dbK-Mt-hTN"/>
+                <outlet property="spaceVHei" destination="Hsk-YK-eNP" id="SKf-pn-cr5"/>
+                <outlet property="stackV" destination="7O7-Kj-ngP" id="YNH-6n-dvM"/>
+            </connections>
+            <point key="canvasLocation" x="62.5" y="14.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="service_center_title_bj" width="369" height="78"/>
+    </resources>
+</document>

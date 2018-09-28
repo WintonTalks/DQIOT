@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSansFallback.ttf">
+            <string>DroidSansFallback</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CZ_DDQRCell" rowHeight="982" id="pFa-2k-wtP" customClass="CZ_DDQRCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="982"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pFa-2k-wtP" id="A1Z-af-s9H">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="981.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ua7-ao-yRA" customClass="WorkDeskDetailView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="86" id="cLQ-Ot-oAr"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1TO-87-81B">
+                        <rect key="frame" x="0.0" y="86" width="375" height="895.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTW-mm-lGR">
+                                <rect key="frame" x="13" y="9" width="73" height="26"/>
+                                <color key="backgroundColor" red="0.26177683309999999" green="0.42501404209999999" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="g9s-YU-Vam"/>
+                                    <constraint firstAttribute="height" constant="26" id="oU1-pe-nuN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="13"/>
+                                <state key="normal" title="确定"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sureBtnClicked:" destination="pFa-2k-wtP" eventType="touchUpInside" id="8cm-y5-grU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIB-hp-mH2">
+                                <rect key="frame" x="94" y="9" width="73" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="Cn2-a6-2ck"/>
+                                    <constraint firstAttribute="height" constant="26" id="OVO-5h-1xO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="12"/>
+                                <state key="normal" title="驳回">
+                                    <color key="titleColor" red="0.0" green="0.070588235289999995" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="agaBtnClicked:" destination="pFa-2k-wtP" eventType="touchUpInside" id="Xmo-cM-Dnn"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIT-J2-0sn">
+                                <rect key="frame" x="13" y="45" width="349" height="1"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="U21-XR-yln"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKG-Yu-1qX" customClass="JCGTDView">
+                                <rect key="frame" x="0.0" y="46" width="375" height="849"/>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gTW-mm-lGR" firstAttribute="leading" secondItem="1TO-87-81B" secondAttribute="leading" constant="13" id="0rO-Vn-t0n"/>
+                            <constraint firstAttribute="trailing" secondItem="XIT-J2-0sn" secondAttribute="trailing" constant="13" id="ASb-3I-EOB"/>
+                            <constraint firstItem="XIT-J2-0sn" firstAttribute="leading" secondItem="1TO-87-81B" secondAttribute="leading" constant="13" id="MJf-PZ-LIg"/>
+                            <constraint firstAttribute="bottom" secondItem="lKG-Yu-1qX" secondAttribute="bottom" id="Mof-9c-1tq"/>
+                            <constraint firstItem="lKG-Yu-1qX" firstAttribute="top" secondItem="XIT-J2-0sn" secondAttribute="bottom" id="WoP-SE-ADf"/>
+                            <constraint firstItem="XIT-J2-0sn" firstAttribute="top" secondItem="mIB-hp-mH2" secondAttribute="bottom" constant="10" id="Zaz-7R-NNj"/>
+                            <constraint firstAttribute="trailing" secondItem="lKG-Yu-1qX" secondAttribute="trailing" id="aAU-6C-Usa"/>
+                            <constraint firstItem="mIB-hp-mH2" firstAttribute="leading" secondItem="gTW-mm-lGR" secondAttribute="trailing" constant="8" id="dNz-2v-Nhm"/>
+                            <constraint firstItem="lKG-Yu-1qX" firstAttribute="leading" secondItem="1TO-87-81B" secondAttribute="leading" id="nTe-Gm-VRK"/>
+                            <constraint firstItem="gTW-mm-lGR" firstAttribute="top" secondItem="1TO-87-81B" secondAttribute="top" constant="9" id="tZD-dd-03g"/>
+                            <constraint firstItem="mIB-hp-mH2" firstAttribute="top" secondItem="1TO-87-81B" secondAttribute="top" constant="9" id="zh0-Gx-CgH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1TO-87-81B" firstAttribute="leading" secondItem="A1Z-af-s9H" secondAttribute="leading" id="7h4-fP-9Jy"/>
+                    <constraint firstItem="1TO-87-81B" firstAttribute="top" secondItem="ua7-ao-yRA" secondAttribute="bottom" id="Cxh-x2-c7n"/>
+                    <constraint firstItem="ua7-ao-yRA" firstAttribute="top" secondItem="A1Z-af-s9H" secondAttribute="top" id="N0w-FW-gDr"/>
+                    <constraint firstAttribute="bottom" secondItem="1TO-87-81B" secondAttribute="bottom" id="S2c-lC-Lol"/>
+                    <constraint firstAttribute="trailing" secondItem="1TO-87-81B" secondAttribute="trailing" id="XdS-PP-zq1"/>
+                    <constraint firstAttribute="trailing" secondItem="ua7-ao-yRA" secondAttribute="trailing" id="ewL-Q8-b0o"/>
+                    <constraint firstItem="ua7-ao-yRA" firstAttribute="leading" secondItem="A1Z-af-s9H" secondAttribute="leading" id="iTw-gw-Per"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomV" destination="1TO-87-81B" id="FOB-Cs-wud"/>
+                <outlet property="detailV" destination="ua7-ao-yRA" id="XXH-9G-Api"/>
+                <outlet property="jcgtView" destination="lKG-Yu-1qX" id="DOz-z0-LfS"/>
+                <outlet property="lineV" destination="XIT-J2-0sn" id="4Mg-Jr-7UJ"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="-15"/>
+        </tableViewCell>
+    </objects>
+</document>

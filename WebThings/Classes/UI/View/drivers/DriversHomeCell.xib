@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSansFallback.ttf">
+            <string>DroidSansFallback</string>
+        </array>
+        <array key="DroidSans_Bold.ttf">
+            <string>DroidSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DriversHomeCell" rowHeight="122" id="5pY-QU-sJE" customClass="DriversHomeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5pY-QU-sJE" id="CAo-P6-tUg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="121.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhc-P2-3yk" customClass="EMICardView">
+                        <rect key="frame" x="2" y="0.0" width="371" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqu-Ff-NaJ">
+                                <rect key="frame" x="12" y="12" width="47" height="21"/>
+                                <fontDescription key="fontDescription" name="DroidSans-Bold" family="Droid Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8r-Iy-lsK">
+                                <rect key="frame" x="11" y="38" width="29" height="16"/>
+                                <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="12"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.60784313725490191" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gO-nB-WWX">
+                                <rect key="frame" x="11" y="68" width="29" height="16"/>
+                                <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_date" translatesAutoresizingMaskIntoConstraints="NO" id="hDV-uF-b2y">
+                                <rect key="frame" x="9" y="89" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="VZ8-1Z-UhN"/>
+                                    <constraint firstAttribute="height" constant="15" id="zdl-gN-afL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9A-Uf-0bp">
+                                <rect key="frame" x="27" y="88" width="29" height="16"/>
+                                <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="12"/>
+                                <color key="textColor" red="0.60392156860000001" green="0.60784313729999995" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_expand_more" translatesAutoresizingMaskIntoConstraints="NO" id="1lQ-6Y-ucA">
+                                <rect key="frame" x="340" y="50" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BnH-4M-dk4"/>
+                                    <constraint firstAttribute="width" constant="20" id="ZaD-c7-oIM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N9A-Uf-0bp" firstAttribute="leading" secondItem="hDV-uF-b2y" secondAttribute="trailing" constant="3" id="1fE-4U-wn5"/>
+                            <constraint firstItem="Cqu-Ff-NaJ" firstAttribute="top" secondItem="Mhc-P2-3yk" secondAttribute="top" constant="12" id="AGs-tH-fIF"/>
+                            <constraint firstItem="7gO-nB-WWX" firstAttribute="top" secondItem="f8r-Iy-lsK" secondAttribute="bottom" constant="14" id="Bh7-GK-PSY"/>
+                            <constraint firstItem="Cqu-Ff-NaJ" firstAttribute="leading" secondItem="Mhc-P2-3yk" secondAttribute="leading" constant="12" id="CFe-WM-Vhw"/>
+                            <constraint firstItem="hDV-uF-b2y" firstAttribute="leading" secondItem="Mhc-P2-3yk" secondAttribute="leading" constant="9" id="Dl5-bs-ppe"/>
+                            <constraint firstItem="f8r-Iy-lsK" firstAttribute="top" secondItem="Cqu-Ff-NaJ" secondAttribute="bottom" constant="5" id="O6H-RK-lLd"/>
+                            <constraint firstItem="1lQ-6Y-ucA" firstAttribute="centerY" secondItem="Mhc-P2-3yk" secondAttribute="centerY" id="jdq-WX-egK"/>
+                            <constraint firstAttribute="trailing" secondItem="1lQ-6Y-ucA" secondAttribute="trailing" constant="11" id="oWT-gv-4bK"/>
+                            <constraint firstItem="N9A-Uf-0bp" firstAttribute="centerY" secondItem="hDV-uF-b2y" secondAttribute="centerY" id="pBw-S5-CQ6"/>
+                            <constraint firstItem="7gO-nB-WWX" firstAttribute="leading" secondItem="Mhc-P2-3yk" secondAttribute="leading" constant="11" id="wdU-Ms-eWe"/>
+                            <constraint firstItem="hDV-uF-b2y" firstAttribute="top" secondItem="7gO-nB-WWX" secondAttribute="bottom" constant="5" id="ypq-le-QCD"/>
+                            <constraint firstItem="f8r-Iy-lsK" firstAttribute="leading" secondItem="Mhc-P2-3yk" secondAttribute="leading" constant="11" id="z5Z-fR-xpL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Mhc-P2-3yk" secondAttribute="trailing" constant="2" id="IdI-0N-4Eq"/>
+                    <constraint firstAttribute="bottom" secondItem="Mhc-P2-3yk" secondAttribute="bottom" constant="2" id="XgX-7k-Aft"/>
+                    <constraint firstItem="Mhc-P2-3yk" firstAttribute="leading" secondItem="CAo-P6-tUg" secondAttribute="leading" constant="2" id="YqB-LR-L1F"/>
+                    <constraint firstItem="Mhc-P2-3yk" firstAttribute="top" secondItem="CAo-P6-tUg" secondAttribute="top" id="bJl-W1-oXy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLab" destination="f8r-Iy-lsK" id="wAQ-Ek-nMr"/>
+                <outlet property="nameLab" destination="Cqu-Ff-NaJ" id="TiX-LA-UCP"/>
+                <outlet property="noteLab" destination="7gO-nB-WWX" id="KDl-q1-joc"/>
+                <outlet property="timeLab" destination="N9A-Uf-0bp" id="eNy-3G-Tch"/>
+            </connections>
+            <point key="canvasLocation" x="73.5" y="73"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_date" width="12" height="12"/>
+        <image name="ic_expand_more" width="40" height="40"/>
+    </resources>
+</document>

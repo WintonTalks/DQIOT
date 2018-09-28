@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSansFallback.ttf">
+            <string>DroidSansFallback</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GZTZCell" rowHeight="132" id="ttF-FR-cLG" customClass="GZTZCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ttF-FR-cLG" id="kR6-Og-982">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="131.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cn-Np-u3E" customClass="WorkDeskDetailView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="86" id="8Fw-MD-OLb"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEG-6a-SYt">
+                        <rect key="frame" x="0.0" y="86" width="375" height="45.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75R-U5-epd">
+                                <rect key="frame" x="13" y="9" width="96" height="26"/>
+                                <color key="backgroundColor" red="0.26177683312908495" green="0.42501404207516341" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="JNB-Y4-l6w"/>
+                                    <constraint firstAttribute="height" constant="26" id="vUs-bD-yV4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="13"/>
+                                <state key="normal" title="填写维修单"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="ttF-FR-cLG" eventType="touchUpInside" id="4hP-pU-WII"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="75R-U5-epd" firstAttribute="centerY" secondItem="GEG-6a-SYt" secondAttribute="centerY" id="eNp-9U-5gH"/>
+                            <constraint firstItem="75R-U5-epd" firstAttribute="leading" secondItem="GEG-6a-SYt" secondAttribute="leading" constant="13" id="sFL-f7-Ipb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="GEG-6a-SYt" secondAttribute="bottom" id="EAD-EI-mWd"/>
+                    <constraint firstAttribute="trailing" secondItem="4cn-Np-u3E" secondAttribute="trailing" id="JlF-mZ-7Xa"/>
+                    <constraint firstItem="GEG-6a-SYt" firstAttribute="top" secondItem="4cn-Np-u3E" secondAttribute="bottom" id="QrO-70-IH9"/>
+                    <constraint firstAttribute="trailing" secondItem="GEG-6a-SYt" secondAttribute="trailing" id="bJ5-6x-pAa"/>
+                    <constraint firstItem="4cn-Np-u3E" firstAttribute="top" secondItem="kR6-Og-982" secondAttribute="top" id="mHD-c6-8Le"/>
+                    <constraint firstItem="4cn-Np-u3E" firstAttribute="leading" secondItem="kR6-Og-982" secondAttribute="leading" id="vaS-dl-ZPd"/>
+                    <constraint firstItem="GEG-6a-SYt" firstAttribute="leading" secondItem="kR6-Og-982" secondAttribute="leading" id="yo1-aM-pcm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomV" destination="GEG-6a-SYt" id="h8a-aX-JyG"/>
+                <outlet property="detailV" destination="4cn-Np-u3E" id="Mrf-E2-Rck"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="-15"/>
+        </tableViewCell>
+    </objects>
+</document>

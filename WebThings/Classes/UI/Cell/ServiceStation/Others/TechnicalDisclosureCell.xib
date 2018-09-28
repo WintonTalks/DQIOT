@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TechnicalDisclosureCell" rowHeight="136" id="3Ry-Xs-MOa" customClass="TechnicalDisclosureCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Ry-Xs-MOa" id="nta-Ah-rmh">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9HU-Qj-JKl">
+                        <rect key="frame" x="36" y="0.0" width="1" height="135.5"/>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.4941176471" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="wXq-hX-WIe"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1P-iG-dUF" customClass="EMICardView">
+                        <rect key="frame" x="51" y="1" width="245" height="132.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ly7-1F-iek">
+                                <rect key="frame" x="0.0" y="0.0" width="245" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RR5-h3-Pj8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EQ-2r-Y2B">
+                                <rect key="frame" x="0.0" y="44" width="245" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="lMH-5v-6bI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsU-Lk-cXU">
+                                <rect key="frame" x="0.0" y="83" width="245" height="49.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fsU-Lk-cXU" firstAttribute="leading" secondItem="C1P-iG-dUF" secondAttribute="leading" id="1q2-0I-IJG"/>
+                            <constraint firstItem="4EQ-2r-Y2B" firstAttribute="trailing" secondItem="Ly7-1F-iek" secondAttribute="trailing" id="3GC-fO-E1n"/>
+                            <constraint firstItem="4EQ-2r-Y2B" firstAttribute="top" secondItem="Ly7-1F-iek" secondAttribute="bottom" id="Bjy-IM-uUF"/>
+                            <constraint firstAttribute="width" constant="245" id="KKt-7Z-coH"/>
+                            <constraint firstAttribute="bottom" secondItem="fsU-Lk-cXU" secondAttribute="bottom" id="ShV-rG-XA9"/>
+                            <constraint firstItem="fsU-Lk-cXU" firstAttribute="top" secondItem="4EQ-2r-Y2B" secondAttribute="bottom" id="bep-yL-wsC"/>
+                            <constraint firstAttribute="trailing" secondItem="fsU-Lk-cXU" secondAttribute="trailing" id="d9Y-07-NIQ"/>
+                            <constraint firstItem="Ly7-1F-iek" firstAttribute="leading" secondItem="C1P-iG-dUF" secondAttribute="leading" id="g9L-Gx-QmS"/>
+                            <constraint firstItem="Ly7-1F-iek" firstAttribute="top" secondItem="C1P-iG-dUF" secondAttribute="top" id="iYL-8o-BAU"/>
+                            <constraint firstItem="4EQ-2r-Y2B" firstAttribute="leading" secondItem="Ly7-1F-iek" secondAttribute="leading" id="qPX-mR-oqs"/>
+                            <constraint firstAttribute="trailing" secondItem="Ly7-1F-iek" secondAttribute="trailing" id="rRP-3e-nQl"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHe-n6-DbL">
+                        <rect key="frame" x="37" y="133.5" width="338" height="2"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="82b-1A-Kwn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GHe-n6-DbL" secondAttribute="trailing" id="3MA-aB-Cda"/>
+                    <constraint firstAttribute="bottom" secondItem="GHe-n6-DbL" secondAttribute="bottom" id="5n2-nx-RRR"/>
+                    <constraint firstItem="C1P-iG-dUF" firstAttribute="top" secondItem="nta-Ah-rmh" secondAttribute="top" constant="1" id="A2q-vo-ktW"/>
+                    <constraint firstItem="9HU-Qj-JKl" firstAttribute="top" secondItem="nta-Ah-rmh" secondAttribute="top" id="Fhs-UJ-EAl"/>
+                    <constraint firstItem="C1P-iG-dUF" firstAttribute="bottom" secondItem="GHe-n6-DbL" secondAttribute="top" id="LCF-xK-C5S"/>
+                    <constraint firstItem="9HU-Qj-JKl" firstAttribute="leading" secondItem="nta-Ah-rmh" secondAttribute="leading" constant="36" id="OCi-QR-xzz"/>
+                    <constraint firstItem="GHe-n6-DbL" firstAttribute="leading" secondItem="9HU-Qj-JKl" secondAttribute="trailing" id="SLu-lC-0ry"/>
+                    <constraint firstAttribute="bottom" secondItem="9HU-Qj-JKl" secondAttribute="bottom" id="cG9-Cp-MXZ"/>
+                    <constraint firstItem="C1P-iG-dUF" firstAttribute="leading" secondItem="nta-Ah-rmh" secondAttribute="leading" constant="51" id="zMD-ud-koc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnFatherV" destination="fsU-Lk-cXU" id="F0s-sm-FVK"/>
+                <outlet property="fatherV" destination="C1P-iG-dUF" id="q69-oz-Muz"/>
+                <outlet property="fatherVLeading" destination="zMD-ud-koc" id="rQb-vE-I10"/>
+                <outlet property="fatherVWidth" destination="KKt-7Z-coH" id="XOf-cU-27c"/>
+                <outlet property="finishFatherV" destination="Ly7-1F-iek" id="huP-q6-7gh"/>
+                <outlet property="footFatherV" destination="4EQ-2r-Y2B" id="fUU-om-DBR"/>
+                <outlet property="spaceVHei" destination="82b-1A-Kwn" id="2h3-bo-v4v"/>
+            </connections>
+            <point key="canvasLocation" x="18.5" y="2"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,1 @@
+../../../MaterialComponents/components/MaskedTransition/src/private/MDCMaskedTransitionMotionSpec.h

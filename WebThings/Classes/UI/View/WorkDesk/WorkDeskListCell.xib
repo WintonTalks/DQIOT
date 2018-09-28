@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkDeskListCell" rowHeight="100" id="KGk-i7-Jjw" customClass="WorkDeskListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usN-Dx-rJ0" customClass="EMICardView">
+                        <rect key="frame" x="9" y="5" width="301" height="89.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="故障通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twq-mV-e8o">
+                        <rect key="frame" x="23" y="23" width="80" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="OcU-UQ-shb"/>
+                            <constraint firstAttribute="width" constant="80" id="U2F-UW-XGQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-07-05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnD-gM-Gvd">
+                        <rect key="frame" x="103" y="27" width="154" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="tma-cH-JEC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="某某建筑公司" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lP-mU-OOh">
+                        <rect key="frame" x="23" y="54.5" width="234" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="egr-g1-tMG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="business_unread_mes" translatesAutoresizingMaskIntoConstraints="NO" id="ZJz-Ob-UNY">
+                        <rect key="frame" x="272" y="36" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="ByP-g3-h3E"/>
+                            <constraint firstAttribute="height" constant="27" id="c5F-fF-a7s"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Twq-mV-e8o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="3Be-i0-S8l"/>
+                    <constraint firstAttribute="trailing" secondItem="ZJz-Ob-UNY" secondAttribute="trailing" constant="21" id="9k4-F5-f3O"/>
+                    <constraint firstItem="hnD-gM-Gvd" firstAttribute="leading" secondItem="Twq-mV-e8o" secondAttribute="trailing" id="BBc-mS-zdk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2lP-mU-OOh" secondAttribute="bottom" constant="5" id="FRm-zW-lgN"/>
+                    <constraint firstAttribute="bottom" secondItem="usN-Dx-rJ0" secondAttribute="bottom" constant="5" id="Gme-rn-y67"/>
+                    <constraint firstItem="hnD-gM-Gvd" firstAttribute="bottom" secondItem="Twq-mV-e8o" secondAttribute="bottom" constant="-1" id="UyM-a9-KTR"/>
+                    <constraint firstItem="usN-Dx-rJ0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Vw1-aN-y7L"/>
+                    <constraint firstItem="2lP-mU-OOh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="ZyD-84-0cZ"/>
+                    <constraint firstItem="ZJz-Ob-UNY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eII-Fq-nUD"/>
+                    <constraint firstItem="ZJz-Ob-UNY" firstAttribute="leading" secondItem="2lP-mU-OOh" secondAttribute="trailing" constant="15" id="lRV-ao-g3v"/>
+                    <constraint firstItem="Twq-mV-e8o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="lZQ-Q6-MST"/>
+                    <constraint firstItem="ZJz-Ob-UNY" firstAttribute="leading" secondItem="hnD-gM-Gvd" secondAttribute="trailing" constant="15" id="nB2-pf-71n"/>
+                    <constraint firstAttribute="trailing" secondItem="usN-Dx-rJ0" secondAttribute="trailing" constant="10" id="uoz-A3-GFU"/>
+                    <constraint firstItem="usN-Dx-rJ0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="vmZ-7s-qKA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardView" destination="usN-Dx-rJ0" id="ET2-sl-fwA"/>
+                <outlet property="dateLabel" destination="hnD-gM-Gvd" id="hGG-8F-ubG"/>
+                <outlet property="descLabel" destination="2lP-mU-OOh" id="I9e-nK-sHV"/>
+                <outlet property="mesStateImageView" destination="ZJz-Ob-UNY" id="Wdd-VG-jeX"/>
+                <outlet property="titleLabel" destination="Twq-mV-e8o" id="ZxR-sj-NfX"/>
+            </connections>
+            <point key="canvasLocation" x="-80" y="2"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="business_unread_mes" width="27" height="27"/>
+    </resources>
+</document>

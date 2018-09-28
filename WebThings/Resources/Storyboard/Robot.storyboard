@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Robot Chat View Controller-->
+        <scene sceneID="Qeg-iR-DH4">
+            <objects>
+                <viewController storyboardIdentifier="RobotChatVC" id="IIN-wI-xex" customClass="RobotChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="azp-ah-bfF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jfb-5e-RSK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tDM-hL-ttC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2m-Az-NGh">
+                                <rect key="frame" x="342" y="31" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="A6I-lp-s1Q"/>
+                                    <constraint firstAttribute="height" constant="20" id="Myu-DM-gsA"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ic_close"/>
+                                <connections>
+                                    <action selector="back:" destination="IIN-wI-xex" eventType="touchUpInside" id="J7Y-oB-BeN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scw-e9-Qy3">
+                                <rect key="frame" x="147" y="577" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0gp-oM-LFE"/>
+                                    <constraint firstAttribute="height" constant="80" id="Ifx-h3-SgL"/>
+                                </constraints>
+                                <state key="normal" image="ic_yuyin"/>
+                                <connections>
+                                    <action selector="listen:" destination="IIN-wI-xex" eventType="touchUpInside" id="XZk-6M-UJu"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PHd-e7-3V3">
+                                <rect key="frame" x="0.0" y="68" width="375" height="459"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="IIN-wI-xex" id="CLa-5N-Ooj"/>
+                                    <outlet property="delegate" destination="IIN-wI-xex" id="6Yh-nb-h2n"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="scw-e9-Qy3" firstAttribute="centerX" secondItem="tDM-hL-ttC" secondAttribute="centerX" id="14e-be-f8j"/>
+                            <constraint firstItem="Jfb-5e-RSK" firstAttribute="top" secondItem="PHd-e7-3V3" secondAttribute="bottom" constant="140" id="43h-kk-yDK"/>
+                            <constraint firstAttribute="trailing" secondItem="V2m-Az-NGh" secondAttribute="trailing" constant="13" id="Es5-O5-PLR"/>
+                            <constraint firstItem="V2m-Az-NGh" firstAttribute="top" secondItem="azp-ah-bfF" secondAttribute="bottom" constant="11" id="Ivr-ti-N7T"/>
+                            <constraint firstAttribute="trailing" secondItem="PHd-e7-3V3" secondAttribute="trailing" id="YTx-sM-N6W"/>
+                            <constraint firstItem="PHd-e7-3V3" firstAttribute="leading" secondItem="tDM-hL-ttC" secondAttribute="leading" id="bYO-1h-sJF"/>
+                            <constraint firstItem="PHd-e7-3V3" firstAttribute="top" secondItem="azp-ah-bfF" secondAttribute="bottom" constant="48" id="lC5-yh-gov"/>
+                            <constraint firstItem="Jfb-5e-RSK" firstAttribute="top" secondItem="scw-e9-Qy3" secondAttribute="bottom" constant="10" id="qkN-5E-zdr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomBtn" destination="scw-e9-Qy3" id="hNt-eX-cyB"/>
+                        <outlet property="chatTableView" destination="PHd-e7-3V3" id="w7A-a8-2sR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92Y-U4-lst" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="-160"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_close" width="20" height="20"/>
+        <image name="ic_yuyin" width="76" height="76"/>
+    </resources>
+</document>

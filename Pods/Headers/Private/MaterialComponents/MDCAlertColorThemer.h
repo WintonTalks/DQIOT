@@ -1,0 +1,1 @@
+../../../MaterialComponents/components/Dialogs/src/ColorThemer/MDCAlertColorThemer.h

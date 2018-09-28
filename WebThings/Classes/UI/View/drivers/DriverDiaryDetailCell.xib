@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSansFallback.ttf">
+            <string>DroidSansFallback</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DriverDiaryDetailCell" rowHeight="61" id="nbh-Zi-Czo" customClass="DriverDiaryDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nbh-Zi-Czo" id="aVa-5h-2B3">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WA-mG-Yv9">
+                        <rect key="frame" x="17" y="5" width="180" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="lV5-b1-p5Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="12"/>
+                        <color key="textColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_down" translatesAutoresizingMaskIntoConstraints="NO" id="yXZ-KI-x95">
+                        <rect key="frame" x="303" y="28.5" width="6" height="4"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="rdz-b4-eiC"/>
+                            <constraint firstAttribute="width" constant="6" id="vbP-5b-Opo"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBK-Pd-YTT">
+                        <rect key="frame" x="256" y="15" width="39" height="30"/>
+                        <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="13"/>
+                        <state key="normal" title="请选择">
+                            <color key="titleColor" red="0.5607843137254902" green="0.56470588235294117" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="stateBtnClickedd:" destination="nbh-Zi-Czo" eventType="touchUpInside" id="twm-lh-8vQ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3WA-mG-Yv9" firstAttribute="top" secondItem="aVa-5h-2B3" secondAttribute="top" constant="5" id="WLW-iS-qbC"/>
+                    <constraint firstItem="3WA-mG-Yv9" firstAttribute="leading" secondItem="aVa-5h-2B3" secondAttribute="leading" constant="17" id="Xub-JV-L4J"/>
+                    <constraint firstAttribute="bottom" secondItem="3WA-mG-Yv9" secondAttribute="bottom" constant="5" id="g4i-qd-dGx"/>
+                    <constraint firstItem="yXZ-KI-x95" firstAttribute="centerY" secondItem="aVa-5h-2B3" secondAttribute="centerY" id="kTt-3v-BZz"/>
+                    <constraint firstItem="KBK-Pd-YTT" firstAttribute="centerY" secondItem="aVa-5h-2B3" secondAttribute="centerY" id="mKR-VU-Dge"/>
+                    <constraint firstAttribute="trailing" secondItem="yXZ-KI-x95" secondAttribute="trailing" constant="11" id="mT7-4b-sw8"/>
+                    <constraint firstItem="yXZ-KI-x95" firstAttribute="leading" secondItem="KBK-Pd-YTT" secondAttribute="trailing" constant="8" id="nwU-uJ-PY4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLab" destination="3WA-mG-Yv9" id="BKr-LR-OS9"/>
+                <outlet property="stateBtn" destination="KBK-Pd-YTT" id="qXK-R3-aL5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_down" width="8" height="5"/>
+    </resources>
+</document>

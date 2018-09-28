@@ -1,0 +1,1 @@
+../../../../MDFInternationalization/Sources/UIImage+MaterialRTL.h

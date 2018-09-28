@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+
+
+body,html,div{
+		margin:0px;
+		padding:0px;
+}
+body{
+	background-color: #f2f2f2;
+	font-size: 12px;
+	width: 100%;
+	height: 100%;
+}
+.container{
+	font-family: 'PingFangSC-Regular';
+	position: fixed;
+    float: left;
+    width: 100%;
+    height: 100%;
+
+}
+.container .icon{
+	width: 139px;
+	height: 144px;
+	display: block;
+	background-image: url(icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	margin:24.9% auto 0rem;
+}
+.container p{
+	color: #6A99E9;
+	font-size: 1rem;
+	text-align: center;
+}
+.container .service{
+	width: 100%;
+	text-align: center;
+	margin:0 auto;
+	bottom: 2.5rem;
+    position: absolute;
+}
+.container span{
+	font-family: 'PingFangSC-Medium';
+	color:#7A7A7A;
+	font-size: 0.8rem;
+	text-align: center;
+    display: block;
+   
+}

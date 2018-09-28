@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSansFallback.ttf">
+            <string>DroidSansFallback</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RobotRightCell" id="0kP-TB-Zfg" customClass="RobotRightCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0kP-TB-Zfg" id="uue-Mf-HIG">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYn-ZQ-jEt">
+                        <rect key="frame" x="123" y="0.0" width="240" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkb-Uc-yk8">
+                                <rect key="frame" x="12" y="11" width="216" height="21"/>
+                                <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.88627450980392153" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Xkb-Uc-yk8" secondAttribute="bottom" constant="11" id="25Q-e3-y2n"/>
+                            <constraint firstAttribute="width" constant="240" id="EDo-5n-1QJ"/>
+                            <constraint firstItem="Xkb-Uc-yk8" firstAttribute="top" secondItem="eYn-ZQ-jEt" secondAttribute="top" constant="11" id="KdI-of-14M"/>
+                            <constraint firstAttribute="trailing" secondItem="Xkb-Uc-yk8" secondAttribute="trailing" constant="12" id="UZH-JG-QDG"/>
+                            <constraint firstAttribute="height" constant="43" id="VsK-4o-8LX"/>
+                            <constraint firstItem="Xkb-Uc-yk8" firstAttribute="leading" secondItem="eYn-ZQ-jEt" secondAttribute="leading" constant="12" id="aXX-dv-QQh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95294117649999999" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="eYn-ZQ-jEt" firstAttribute="top" secondItem="uue-Mf-HIG" secondAttribute="top" id="KPZ-Fp-WLy"/>
+                    <constraint firstAttribute="trailing" secondItem="eYn-ZQ-jEt" secondAttribute="trailing" constant="12" id="bp0-kP-boy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgV" destination="eYn-ZQ-jEt" id="gfS-I9-KlT"/>
+                <outlet property="bgVHeight" destination="VsK-4o-8LX" id="iIu-Yi-UUd"/>
+                <outlet property="bgVWidth" destination="EDo-5n-1QJ" id="LCU-bY-Hxz"/>
+                <outlet property="contentLab" destination="Xkb-Uc-yk8" id="mRk-QX-IkU"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="110"/>
+        </tableViewCell>
+    </objects>
+</document>

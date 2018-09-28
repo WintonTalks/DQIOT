@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSansFallback.ttf">
+            <string>DroidSansFallback</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServiceFinishedLeftView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="2eh-K8-Dsv"/>
+                <outlet property="imgV" destination="CJt-E9-YN7" id="wvh-HX-khl"/>
+                <outlet property="titleLab" destination="ZcV-V5-lrV" id="04m-jA-byt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sure" translatesAutoresizingMaskIntoConstraints="NO" id="CJt-E9-YN7">
+                    <rect key="frame" x="11" y="12" width="19" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="jtd-EZ-oeP"/>
+                        <constraint firstAttribute="height" constant="19" id="m4P-cV-Cti"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务清单已确认，确定预埋件时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcV-V5-lrV">
+                    <rect key="frame" x="44" y="14.5" width="180" height="14"/>
+                    <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="12"/>
+                    <color key="textColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBX-d9-wge">
+                    <rect key="frame" x="11" y="43" width="223" height="1"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="s8b-mH-dlh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CJt-E9-YN7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="3pL-B8-6Nr"/>
+                <constraint firstItem="ZcV-V5-lrV" firstAttribute="centerY" secondItem="CJt-E9-YN7" secondAttribute="centerY" id="8N8-iX-p7m"/>
+                <constraint firstItem="ZcV-V5-lrV" firstAttribute="leading" secondItem="CJt-E9-YN7" secondAttribute="trailing" constant="14" id="Gem-0h-LfO"/>
+                <constraint firstItem="bBX-d9-wge" firstAttribute="top" secondItem="CJt-E9-YN7" secondAttribute="bottom" constant="12" id="WOf-m9-F2t"/>
+                <constraint firstItem="bBX-d9-wge" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="XR1-Ga-gzQ"/>
+                <constraint firstAttribute="trailing" secondItem="bBX-d9-wge" secondAttribute="trailing" constant="11" id="g1Y-Jq-nna"/>
+                <constraint firstItem="CJt-E9-YN7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="wvV-ad-FFE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_sure" width="19" height="19"/>
+    </resources>
+</document>

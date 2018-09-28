@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSansFallback.ttf">
+            <string>DroidSansFallback</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZL_WH_JGYHSCell" rowHeight="132" id="nwY-Xh-kx4" customClass="ZL_WH_JGYHSCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nwY-Xh-kx4" id="QhN-PS-vrw">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="131.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfZ-wf-e3e" customClass="WorkDeskDetailView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="86" id="QEc-Fo-czK"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QsQ-jz-kb3">
+                        <rect key="frame" x="0.0" y="86" width="375" height="45.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzq-sr-XYM">
+                                <rect key="frame" x="13" y="9" width="130" height="26"/>
+                                <color key="backgroundColor" red="0.26177683309999999" green="0.42501404209999999" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="CEI-4q-kqO"/>
+                                    <constraint firstAttribute="width" constant="130" id="TNc-8q-B0F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="13"/>
+                                <state key="normal" title="已核实并发起请求"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sureBtnClicked:" destination="nwY-Xh-kx4" eventType="touchUpInside" id="SSW-S8-Niq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSP-6p-uRV">
+                                <rect key="frame" x="151" y="9" width="76" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="GZz-gE-osy"/>
+                                    <constraint firstAttribute="width" constant="76" id="NXl-Nw-YUb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="12"/>
+                                <state key="normal" title="已完成">
+                                    <color key="titleColor" red="0.0" green="0.070588235289999995" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="agaBtnClicked:" destination="nwY-Xh-kx4" eventType="touchUpInside" id="KVA-Ts-l2t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RSP-6p-uRV" firstAttribute="centerY" secondItem="QsQ-jz-kb3" secondAttribute="centerY" id="49s-sE-Wex"/>
+                            <constraint firstItem="Nzq-sr-XYM" firstAttribute="leading" secondItem="QsQ-jz-kb3" secondAttribute="leading" constant="13" id="XVd-Nu-ryQ"/>
+                            <constraint firstItem="RSP-6p-uRV" firstAttribute="leading" secondItem="Nzq-sr-XYM" secondAttribute="trailing" constant="8" id="cU5-M9-6EJ"/>
+                            <constraint firstItem="Nzq-sr-XYM" firstAttribute="centerY" secondItem="QsQ-jz-kb3" secondAttribute="centerY" id="j6g-YS-9yS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="QsQ-jz-kb3" secondAttribute="bottom" id="3N8-vT-cJz"/>
+                    <constraint firstAttribute="trailing" secondItem="GfZ-wf-e3e" secondAttribute="trailing" id="RFL-xE-PoT"/>
+                    <constraint firstItem="QsQ-jz-kb3" firstAttribute="leading" secondItem="QhN-PS-vrw" secondAttribute="leading" id="XgK-Y2-EZE"/>
+                    <constraint firstItem="GfZ-wf-e3e" firstAttribute="top" secondItem="QhN-PS-vrw" secondAttribute="top" id="YXw-l2-8n7"/>
+                    <constraint firstItem="GfZ-wf-e3e" firstAttribute="leading" secondItem="QhN-PS-vrw" secondAttribute="leading" id="cWH-tG-VkL"/>
+                    <constraint firstAttribute="trailing" secondItem="QsQ-jz-kb3" secondAttribute="trailing" id="d6o-q6-psf"/>
+                    <constraint firstItem="QsQ-jz-kb3" firstAttribute="top" secondItem="GfZ-wf-e3e" secondAttribute="bottom" id="oXA-Je-ZZj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomV" destination="QsQ-jz-kb3" id="PYy-Zp-GQg"/>
+                <outlet property="detailV" destination="GfZ-wf-e3e" id="44d-qe-Tqc"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="-15"/>
+        </tableViewCell>
+    </objects>
+</document>

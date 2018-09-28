@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidSansFallback.ttf">
+            <string>DroidSansFallback</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServiceFinishedRightView">
+            <connections>
+                <outlet property="contentView" destination="ieM-wG-aMg" id="5Hz-SD-eg3"/>
+                <outlet property="imgV" destination="U6T-jW-ggd" id="5w9-wu-uBc"/>
+                <outlet property="titleLab" destination="FpU-dg-Bh2" id="jDi-87-J1P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ieM-wG-aMg">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sure" translatesAutoresizingMaskIntoConstraints="NO" id="U6T-jW-ggd">
+                    <rect key="frame" x="215" y="12" width="19" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="SZn-Gd-raZ"/>
+                        <constraint firstAttribute="height" constant="19" id="Zxl-Wd-0uT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务清单已确认，确定预埋件时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpU-dg-Bh2">
+                    <rect key="frame" x="11" y="13.5" width="180" height="16"/>
+                    <fontDescription key="fontDescription" name="DroidSansFallback" family="Droid Sans Fallback" pointSize="12"/>
+                    <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whL-nB-mOw">
+                    <rect key="frame" x="11" y="43" width="223" height="1"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="jwm-Nf-KTe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="U6T-jW-ggd" firstAttribute="top" secondItem="ieM-wG-aMg" secondAttribute="top" constant="12" id="BHx-3m-arU"/>
+                <constraint firstItem="U6T-jW-ggd" firstAttribute="trailing" secondItem="ieM-wG-aMg" secondAttribute="trailing" constant="-11" id="Bi0-OP-c2R"/>
+                <constraint firstItem="whL-nB-mOw" firstAttribute="top" secondItem="U6T-jW-ggd" secondAttribute="bottom" constant="12" id="Cxv-dF-3EA"/>
+                <constraint firstAttribute="trailing" secondItem="whL-nB-mOw" secondAttribute="trailing" constant="11" id="Wjd-UZ-VFx"/>
+                <constraint firstItem="FpU-dg-Bh2" firstAttribute="leading" secondItem="ieM-wG-aMg" secondAttribute="leading" constant="11" id="jMM-Um-VVG"/>
+                <constraint firstItem="whL-nB-mOw" firstAttribute="leading" secondItem="ieM-wG-aMg" secondAttribute="leading" constant="11" id="v1R-vg-1YM"/>
+                <constraint firstItem="FpU-dg-Bh2" firstAttribute="centerY" secondItem="U6T-jW-ggd" secondAttribute="centerY" id="vpX-uW-WiD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_sure" width="19" height="19"/>
+    </resources>
+</document>
